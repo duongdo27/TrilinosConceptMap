@@ -1,0 +1,23 @@
+import os
+import re
+def readComment(fileName):
+    myFile = open(fileName, 'r')
+    content= myFile.read()
+    for i in re.split(r'\n\n+', content):
+        if i.startswith('/*--- Trilinos example metadata'):
+            print (i)
+
+directory = os.fsencode('C:/Users/anhbt\Desktop\Computer Science/xSDKTrilinos\petsc\example')
+
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+    directory2 = directory.decode("utf-8")
+    if filename.endswith(".cpp"):
+        readComment(os.path.join(directory2,filename))
+        print(os.path.join(directory2,filename))
+        continue
+    else:
+        continue
+
+
+

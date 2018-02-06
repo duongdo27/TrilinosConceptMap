@@ -1,0 +1,97 @@
+Epetra_KSPEx.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners, external interfaces
+Topics: Solve a linear system
+Prerequisites: PseudoBlockPrecCGEpetraExFile.cpp
+*/
+
+PETSc_Amesos2Ex.cpp
+/*--- Trilinos example metadata
+Categories: direct solvers, external interfaces
+Topics: Solve a linear system
+Prerequisites: SimpleSolve_File.cpp
+*/
+
+PETSc_AnasaziEx.cpp
+/*--- Trilinos example metadata
+Categories: eigensolvers, external interfaces
+Topics: Solve an eigenvalue problem
+Prerequisites: TraceMinDavidsonGeneralizedEx.cpp
+*/
+
+PETSc_Ifpack2Ex.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners, external interfaces
+Topics: Solve a linear system
+Prerequisites: Ifpack2_ex1.cpp
+*/
+
+PETSc_MueLuEx.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners, external interfaces
+Topics: Solve a linear system
+Prerequisites: Ifpack2_ex1.cpp, Simple.cpp
+*/
+
+Tpetra_KSPEx.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners, external interfaces
+Topics: Solve a linear system
+Prerequisites: Ifpack2_ex1.cpp
+*/
+
+TraceMinDavidsonGeneralizedEx.cpp
+/*--- Trilinos example metadata
+Categories: eigensolvers
+Topics: Solve an eigenvalue problem
+Prerequisites: lesson03_power_method.cpp
+*/
+
+SimpleSolve_File.cpp
+/*--- Trilinos example metadata
+Categories: direct solvers
+Topics: Solve a linear system
+Prerequisites: lesson03_power_method.cpp
+*/
+
+PseudoBlockPrecCGEpetraExFile.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners
+Topics: Solve a linear system
+Prerequisites: Ifpack_ex_Factory.cpp, MatrixMarket_IO.cpp
+*/
+
+Ifpack_ex_Factory.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners
+Topics: Solve a linear system
+Prerequisites: Galeri_LinearProblem.cpp, IfpackAztecOO/cxx_main.cpp
+*/
+
+Ifpack2_ex1.cpp
+/*--- Trilinos example metadata
+Categories: iterative solvers, preconditioners
+Topics: Solve a linear system
+Prerequisites: lesson03_power_method.cpp
+*/
+
+lesson01_mpi_only_through_Tpetra.cpp
+/*--- Trilinos example metadata
+Categories: mpi
+Topics: Setting up parallel code
+Prerequisites: 
+*/
+
+lesson02_read_modify_vec.cpp
+/*--- Trilinos example metadata
+Categories: vector
+Topics: Creating linear algebra objects
+Prerequisites: lesson01_mpi_only_through_Tpetra.cpp
+*/
+
+lesson03_power_method.cpp
+/*--- Trilinos example metadata
+Categories: matrix, vector
+Topics: Creating linear algebra objects
+Prerequisites: lesson02_read_modify_vec.cpp
+*/
