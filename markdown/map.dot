@@ -1,6 +1,5 @@
-digraph G {	=LR;
-  size="8,5"
-  node [shape = circle];
+digraph G {
+  node [shape = box];
   "PseudoBlockPrecCGEpetraExFile.cpp" -> "Epetra_KSPEx.cpp"
   "SimpleSolve_File.cpp" -> "PETSc_Amesos2Ex.cpp"
   "TraceMinDavidsonGeneralizedEx.cpp" -> "PETSc_AnasaziEx.cpp"
@@ -8,7 +7,7 @@ digraph G {	=LR;
   "Simple.cpp" -> "PETSc_MueLuEx.cpp"
   "Ifpack2_ex1.cpp" -> "PETSc_MueLuEx.cpp"
   "Ifpack2_ex1.cpp" -> "Tpetra_KSPEx.cpp"
-  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cpp"
+  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cppgit sta"
   "lesson03_power_method.cpp" -> "SimpleSolve_File.cpp"
   "Ifpack_ex_Factory.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp"
   "MatrixMarket_IO.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp"
