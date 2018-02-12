@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['map_2emd',['map.md',['../map_8md.html',1,'']]]
+  ['categories_2emd',['categories.md',['../categories_8md.html',1,'']]]
 ];
