@@ -1,19 +1,19 @@
 digraph G {
   node [shape = box];
-  "PseudoBlockPrecCGEpetraExFile.cpp" -> "Epetra_KSPEx.cpp"
-  "SimpleSolve_File.cpp" -> "PETSc_Amesos2Ex.cpp"
-  "TraceMinDavidsonGeneralizedEx.cpp" -> "PETSc_AnasaziEx.cpp"
-  "Ifpack2_ex1.cpp" -> "PETSc_Ifpack2Ex.cpp"
-  "Simple.cpp" -> "PETSc_MueLuEx.cpp"
-  "Ifpack2_ex1.cpp" -> "PETSc_MueLuEx.cpp"
-  "Ifpack2_ex1.cpp" -> "Tpetra_KSPEx.cpp"
-  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cppgit sta"
-  "lesson03_power_method.cpp" -> "SimpleSolve_File.cpp"
-  "Ifpack_ex_Factory.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp"
-  "MatrixMarket_IO.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp"
-  "Galeri_LinearProblem.cpp" -> "Ifpack_ex_Factory.cpp"
-  "IfpackAztecOO/cxx_main.cpp" -> "Ifpack_ex_Factory.cpp"
-  "lesson03_power_method.cpp" -> "Ifpack2_ex1.cpp"
-  "lesson01_mpi_only_through_Tpetra.cpp" -> "lesson02_read_modify_vec.cpp"
-  "lesson02_read_modify_vec.cpp" -> "lesson03_power_method.cpp"
+  "PseudoBlockPrecCGEpetraExFile.cpp" -> "Epetra_KSPEx.cpp" [colorscheme="svg" color="purple"]
+  "SimpleSolve_File.cpp" -> "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="red"]
+  "TraceMinDavidsonGeneralizedEx.cpp" -> "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="blue"]
+  "Ifpack2_ex1.cpp" -> "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="yellow"]
+  "Simple.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="orange"]
+  "Ifpack2_ex1.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="palegreen"]
+  "Ifpack2_ex1.cpp" -> "Tpetra_KSPEx.cpp" [colorscheme="svg" color="firebrick"]
+  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cppgit sta" [colorscheme="svg" color="lawngreen"]
+  "lesson03_power_method.cpp" -> "SimpleSolve_File.cpp" [colorscheme="svg" color="teal`"]
+  "Ifpack_ex_Factory.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="slategrey"]
+  "MatrixMarket_IO.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="fuchsia"]
+  "Galeri_LinearProblem.cpp" -> "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="seagreen"]
+  "IfpackAztecOO/cxx_main.cpp" -> "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="mediumslateblue"]
+  "lesson03_power_method.cpp" -> "Ifpack2_ex1.cpp" [colorscheme="svg" color="orangered"]
+  "lesson01_mpi_only_through_Tpetra.cpp" -> "lesson02_read_modify_vec.cpp" [colorscheme="svg" color="greenyellow"]
+  "lesson02_read_modify_vec.cpp" -> "lesson03_power_method.cpp" [colorscheme="svg" color="darkturquoise"]
 }
