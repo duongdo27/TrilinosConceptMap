@@ -7,7 +7,7 @@ digraph G {
   "Simple.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="orange"]
   "Ifpack2_ex1.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="palegreen"]
   "Ifpack2_ex1.cpp" -> "Tpetra_KSPEx.cpp" [colorscheme="svg" color="firebrick"]
-  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cppgit sta" [colorscheme="svg" color="lawngreen"]
+  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="lawngreen"]
   "lesson03_power_method.cpp" -> "SimpleSolve_File.cpp" [colorscheme="svg" color="teal`"]
   "Ifpack_ex_Factory.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="slategrey"]
   "MatrixMarket_IO.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="fuchsia"]
