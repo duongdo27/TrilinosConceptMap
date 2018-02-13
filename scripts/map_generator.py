@@ -24,7 +24,6 @@ class CommentReader(object):
             # Read comments
             elif line.startswith("/*---"):
                 is_comment = True
-
             elif line.startswith("Categories"):
                 data["Categories"] = [x.strip() for x in line.split(":")[1].split(",")]
             elif line.startswith("Topics"):
@@ -33,7 +32,7 @@ class CommentReader(object):
                 data["Prerequisites"] = [x.strip() for x in line.split(":")[1].split(",")]
             elif line.endswith("*/"):
                 is_comment = False
-                all_data.append(data)
+                all_data.append(data.copy())
         return all_data
 
     def run(self):
@@ -134,14 +133,14 @@ class GraphGenerator(object):
 def graphiz_generator():
     color_filename = 'color.json'
     data_filename = 'data.json'
-
+    #data_filename = 'data1.json'
     #ColorPicker(color_filename).run()
     CommentReader(data_filename).run()
 
-    #GraphGenerator(data_filename, color_filename, link_filename,
-    #               "topics.dot", "Topics").run()
-    #GraphGenerator(data_filename, color_filename, link_filename,
-    #               "categories.dot", "Categories").run()
+    GraphGenerator(data_filename, color_filename,
+                   "topics.dot", "Topics").run()
+    GraphGenerator(data_filename, color_filename,
+                   "categories.dot", "Categories").run()
     #GraphGenerator(data_filename, color_filename, link_filename,
     #               "tags.dot", "Tags").run()
 
