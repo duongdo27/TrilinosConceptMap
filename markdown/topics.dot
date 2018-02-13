@@ -1,0 +1,24 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"solve a linear system" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="violet"];
+"solve an eigenvalue problem" [colorscheme="svg" color="paleturquoise"];
+"solve an eigenvalue problem" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="paleturquoise"];
+"solve a linear system" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="violet"];
+"solve an eigenvalue problem" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="paleturquoise"];
+"solve a linear system" ->  "SimpleSolve_File.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="violet"];
+"solve a linear system" ->  "Ifpack2_ex1.cpp" [colorscheme="svg" color="violet"];
+"setting up parallel code" [colorscheme="svg" color="palegreen"];
+"setting up parallel code" ->  "lesson01_mpi_only_through_Tpetra.cpp" [colorscheme="svg" color="palegreen"];
+"creating linear algebra objects" [colorscheme="svg" color="peachpuff"];
+"creating linear algebra objects" ->  "lesson02_read_modify_vec.cpp" [colorscheme="svg" color="peachpuff"];
+"creating linear algebra objects" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="peachpuff"];
+}
