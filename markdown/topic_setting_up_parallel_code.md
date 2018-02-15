@@ -1,4 +1,4 @@
 Topic: Setting up parallel code
 ===============================
 
-\dotfile topic_setting up parallel code.dot
+\dotfile topic_setting_up_parallel_code.dot

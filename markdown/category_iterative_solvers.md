@@ -1,4 +1,4 @@
 Category: Iterative solvers
 ===========================
 
-\dotfile category_iterative solvers.dot
+\dotfile category_iterative_solvers.dot

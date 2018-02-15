@@ -1,4 +1,4 @@
 Category: Direct solvers
 ========================
 
-\dotfile category_direct solvers.dot
+\dotfile category_direct_solvers.dot
