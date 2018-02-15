@@ -1,0 +1,12 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"external interfaces" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="peru"];
+"direct solvers" [colorscheme="svg" color="aquamarine"];
+"external interfaces" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="peru"];
+"iterative solvers" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="blue"];
+"external interfaces" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="peru"];
+"eigensolvers" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="navajowhite"];
+}

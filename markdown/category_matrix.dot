@@ -1,0 +1,8 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"matrix" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="greenyellow"];
+"vector" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="darkorange"];
+}

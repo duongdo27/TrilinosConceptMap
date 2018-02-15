@@ -1,0 +1,9 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"eigensolvers" [colorscheme="svg" color="navajowhite"];
+"eigensolvers" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="navajowhite"];
+"external interfaces" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="peru"];
+}

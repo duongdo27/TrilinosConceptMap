@@ -1,0 +1,13 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"iterative solvers" [colorscheme="svg" color="blue"];
+"iterative solvers" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="blue"];
+"preconditioners" [colorscheme="svg" color="tomato"];
+"iterative solvers" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="blue"];
+"preconditioners" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="tomato"];
+"iterative solvers" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="blue"];
+"preconditioners" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="tomato"];
+}

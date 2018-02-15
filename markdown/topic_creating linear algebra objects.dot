@@ -1,0 +1,8 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"creating linear algebra objects" ->  "lesson02_read_modify_vec.cpp" [colorscheme="svg" color="peachpuff"];
+"creating linear algebra objects" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="peachpuff"];
+}

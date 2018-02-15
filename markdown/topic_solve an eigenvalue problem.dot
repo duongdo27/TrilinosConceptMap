@@ -1,0 +1,8 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"solve an eigenvalue problem" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="paleturquoise"];
+"solve a linear system" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="violet"];
+}

@@ -1,0 +1,8 @@
+digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"setting up parallel code" ->  "lesson01_mpi_only_through_Tpetra.cpp" [colorscheme="svg" color="palegreen"];
+"creating linear algebra objects" [colorscheme="svg" color="peachpuff"];
+}
