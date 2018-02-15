@@ -4,5 +4,5 @@ digraph bettersoftware {
             node [style=filled];
             node [shape = box];
 "matrix" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="greenyellow"];
-"vector" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="darkorange"];
+"matrix" [colorscheme="svg" color="greenyellow"];
 }

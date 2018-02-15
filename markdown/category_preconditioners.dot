@@ -3,14 +3,12 @@ digraph bettersoftware {
             ratio = fill;
             node [style=filled];
             node [shape = box];
+"preconditioners" [colorscheme="svg" color="tomato"];
+"preconditioners" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="tomato"];
+"preconditioners" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="tomato"];
 "preconditioners" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="tomato"];
-"external interfaces" [colorscheme="svg" color="peru"];
 "preconditioners" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="tomato"];
-"external interfaces" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="peru"];
 "preconditioners" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="tomato"];
-"iterative solvers" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="blue"];
 "preconditioners" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="tomato"];
-"iterative solvers" ->  "Ifpack2_ex1.cpp" [colorscheme="svg" color="blue"];
 "preconditioners" ->  "Ifpack2_ex1.cpp" [colorscheme="svg" color="tomato"];
-"mpi" [colorscheme="svg" color="forestgreen"];
 }

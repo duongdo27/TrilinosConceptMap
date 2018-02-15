@@ -1,4 +1,4 @@
-Category: Eigensolvers.dot
-==========================
+Category: Eigensolvers
+======================
 
 \dotfile category_eigensolvers.dot

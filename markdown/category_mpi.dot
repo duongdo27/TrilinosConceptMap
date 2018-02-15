@@ -4,5 +4,5 @@ digraph bettersoftware {
             node [style=filled];
             node [shape = box];
 "mpi" ->  "lesson01_mpi_only_through_Tpetra.cpp" [colorscheme="svg" color="forestgreen"];
-"vector" [colorscheme="svg" color="darkorange"];
+"mpi" [colorscheme="svg" color="forestgreen"];
 }

@@ -5,5 +5,5 @@ digraph bettersoftware {
             node [shape = box];
 "eigensolvers" [colorscheme="svg" color="navajowhite"];
 "eigensolvers" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="navajowhite"];
-"external interfaces" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="peru"];
+"eigensolvers" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="navajowhite"];
 }

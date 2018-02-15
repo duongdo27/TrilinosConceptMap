@@ -6,13 +6,11 @@ digraph bettersoftware {
 "solve a linear system" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="violet"];
-"solve an eigenvalue problem" [colorscheme="svg" color="paleturquoise"];
 "solve a linear system" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="violet"];
-"solve an eigenvalue problem" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="paleturquoise"];
 "solve a linear system" ->  "SimpleSolve_File.cpp" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="violet"];
 "solve a linear system" ->  "Ifpack2_ex1.cpp" [colorscheme="svg" color="violet"];
-"setting up parallel code" [colorscheme="svg" color="palegreen"];
+"solve a linear system" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="violet"];
 }

@@ -3,8 +3,7 @@ digraph bettersoftware {
             ratio = fill;
             node [style=filled];
             node [shape = box];
+"direct solvers" [colorscheme="svg" color="aquamarine"];
 "direct solvers" ->  "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="aquamarine"];
-"external interfaces" ->  "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="peru"];
 "direct solvers" ->  "SimpleSolve_File.cpp" [colorscheme="svg" color="aquamarine"];
-"iterative solvers" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="blue"];
 }

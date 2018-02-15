@@ -4,5 +4,6 @@ digraph bettersoftware {
             node [style=filled];
             node [shape = box];
 "solve an eigenvalue problem" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="paleturquoise"];
-"solve a linear system" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="violet"];
+"solve an eigenvalue problem" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="paleturquoise"];
+"solve an eigenvalue problem" [colorscheme="svg" color="paleturquoise"];
 }
