@@ -130,6 +130,56 @@ class GraphGenerator(object):
             f.write(text)
 
 
+class Graph1Generator(object):
+    def __init__(self, data_filename, color_filename, output_filename, group_by):
+        self.data_filename = data_filename
+        self.color_filename = color_filename
+        self.output_filename = output_filename
+        self.group_by = group_by
+
+    def write_graphviz(self, data, colors):
+        result = """digraph bettersoftware {
+            rankdir = LR;
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];\n"""
+
+        cnt = 0
+        cache_lookup = {}
+        for line in data:
+            if self.group_by not in line:
+                continue
+
+            if type(line[self.group_by]) == list:
+                groups = line[self.group_by]
+            else:
+                groups = [line[self.group_by]]
+            for group in groups:
+                #group = group.lower()
+                if group in cache_lookup:
+                    color = cache_lookup[group]
+                else:
+                    color = colors[cnt]
+                    cnt += 1
+                    cache_lookup[group] = color
+                    result += '"{}" [colorscheme="svg" color="{}"];\n'.format(group, color)
+                result += '"{}" ->  "{}" [colorscheme="svg" color="{}"];\n'.format(group, line["name"], color)
+        result += "}"
+        return result
+
+    def run(self):
+        with open(self.color_filename) as f:
+            colors = json.loads(f.read())
+        shuffle(colors)
+
+        with open(self.data_filename) as f:
+            data = json.loads(f.read())
+
+        text = self.write_graphviz(data, colors)
+        with open(self.output_filename, "w") as f:
+            f.write(text)
+
+
 def graphiz_generator():
     color_filename = 'color.json'
     data_filename = 'data.json'
@@ -137,12 +187,12 @@ def graphiz_generator():
     #ColorPicker(color_filename).run()
     CommentReader(data_filename).run()
 
-    GraphGenerator(data_filename, color_filename,
-                   "topics.dot", "Topics").run()
-    GraphGenerator(data_filename, color_filename,
-                   "categories.dot", "Categories").run()
-    #GraphGenerator(data_filename, color_filename, link_filename,
-    #               "tags.dot", "Tags").run()
+    #GraphGenerator(data_filename, color_filename,
+    #               "topics.dot", "Topics").run()
+    #GraphGenerator(data_filename, color_filename,
+    #               "categories.dot", "Categories").run()
+    Graph1Generator(data_filename, color_filename,
+                   "prerequisites.dot", "Prerequisites").run()
 
 
 if __name__ == '__main__':

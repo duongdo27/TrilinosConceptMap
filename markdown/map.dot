@@ -1,19 +1,33 @@
-digraph G {
-  node [shape = box];
-  "PseudoBlockPrecCGEpetraExFile.cpp" -> "Epetra_KSPEx.cpp" [colorscheme="svg" color="purple"]
-  "SimpleSolve_File.cpp" -> "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="red"]
-  "TraceMinDavidsonGeneralizedEx.cpp" -> "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="blue"]
-  "Ifpack2_ex1.cpp" -> "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="yellow"]
-  "Simple.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="orange"]
-  "Ifpack2_ex1.cpp" -> "PETSc_MueLuEx.cpp" [colorscheme="svg" color="palegreen"]
-  "Ifpack2_ex1.cpp" -> "Tpetra_KSPEx.cpp" [colorscheme="svg" color="firebrick"]
-  "lesson03_power_method.cpp" -> "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="lawngreen"]
-  "lesson03_power_method.cpp" -> "SimpleSolve_File.cpp" [colorscheme="svg" color="teal"]
-  "Ifpack_ex_Factory.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="slategrey"]
-  "MatrixMarket_IO.cpp" -> "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="fuchsia"]
-  "Galeri_LinearProblem.cpp" -> "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="seagreen"]
-  "IfpackAztecOO/cxx_main.cpp" -> "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="mediumslateblue"]
-  "lesson03_power_method.cpp" -> "Ifpack2_ex1.cpp" [colorscheme="svg" color="orangered"]
-  "lesson01_mpi_only_through_Tpetra.cpp" -> "lesson02_read_modify_vec.cpp" [colorscheme="svg" color="greenyellow"]
-  "lesson02_read_modify_vec.cpp" -> "lesson03_power_method.cpp" [colorscheme="svg" color="darkturquoise"]
+digraph bettersoftware {
+            ratio = fill;
+            node [style=filled];
+            node [shape = box];
+"PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="navajowhite"];
+"PseudoBlockPrecCGEpetraExFile.cpp" ->  "Epetra_KSPEx.cpp" [colorscheme="svg" color="navajowhite"];
+"SimpleSolve_File.cpp" [colorscheme="svg" color="deeppink"];
+"SimpleSolve_File.cpp" ->  "PETSc_Amesos2Ex.cpp" [colorscheme="svg" color="deeppink"];
+"TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="pink"];
+"TraceMinDavidsonGeneralizedEx.cpp" ->  "PETSc_AnasaziEx.cpp" [colorscheme="svg" color="pink"];
+"Ifpack2_ex1.cpp" [colorscheme="svg" color="salmon"];
+"Ifpack2_ex1.cpp" ->  "PETSc_Ifpack2Ex.cpp" [colorscheme="svg" color="salmon"];
+"Ifpack2_ex1.cpp" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="salmon"];
+"Simple.cpp" [colorscheme="svg" color="lightpink"];
+"Simple.cpp" ->  "PETSc_MueLuEx.cpp" [colorscheme="svg" color="lightpink"];
+"Ifpack2_ex1.cpp" ->  "Tpetra_KSPEx.cpp" [colorscheme="svg" color="salmon"];
+"lesson03_power_method.cpp" [colorscheme="svg" color="mediumaquamarine"];
+"lesson03_power_method.cpp" ->  "TraceMinDavidsonGeneralizedEx.cpp" [colorscheme="svg" color="mediumaquamarine"];
+"lesson03_power_method.cpp" ->  "SimpleSolve_File.cpp" [colorscheme="svg" color="mediumaquamarine"];
+"Ifpack_ex_Factory.cpp" [colorscheme="svg" color="violet"];
+"Ifpack_ex_Factory.cpp" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="violet"];
+"MatrixMarket_IO.cpp" [colorscheme="svg" color="darkkhaki"];
+"MatrixMarket_IO.cpp" ->  "PseudoBlockPrecCGEpetraExFile.cpp" [colorscheme="svg" color="darkkhaki"];
+"Galeri_LinearProblem.cpp" [colorscheme="svg" color="lightslategray"];
+"Galeri_LinearProblem.cpp" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="lightslategray"];
+"IfpackAztecOO/cxx_main.cpp" [colorscheme="svg" color="darkturquoise"];
+"IfpackAztecOO/cxx_main.cpp" ->  "Ifpack_ex_Factory.cpp" [colorscheme="svg" color="darkturquoise"];
+"lesson03_power_method.cpp" ->  "Ifpack2_ex1.cpp" [colorscheme="svg" color="mediumaquamarine"];
+"lesson01_mpi_only_through_Tpetra.cpp" [colorscheme="svg" color="khaki"];
+"lesson01_mpi_only_through_Tpetra.cpp" ->  "lesson02_read_modify_vec.cpp" [colorscheme="svg" color="khaki"];
+"lesson02_read_modify_vec.cpp" [colorscheme="svg" color="darkseagreen"];
+"lesson02_read_modify_vec.cpp" ->  "lesson03_power_method.cpp" [colorscheme="svg" color="darkseagreen"];
 }
