@@ -139,7 +139,6 @@ class Graph1Generator(object):
 
     def write_graphviz(self, data, colors):
         result = """digraph bettersoftware {
-            rankdir = LR;
             ratio = fill;
             node [style=filled];
             node [shape = box];\n"""
@@ -155,7 +154,6 @@ class Graph1Generator(object):
             else:
                 groups = [line[self.group_by]]
             for group in groups:
-                #group = group.lower()
                 if group in cache_lookup:
                     color = cache_lookup[group]
                 else:
