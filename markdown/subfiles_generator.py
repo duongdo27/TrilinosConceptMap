@@ -25,6 +25,7 @@ def read_file():
         else:
             beginning += line
     for key, value in groups.iteritems():
+        key = "_".join(key.split(" "))
         filename = "category_{}.dot".format(key)
         text = beginning + value + "}"
         with open(filename, 'w') as f:
